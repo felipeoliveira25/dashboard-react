@@ -5,10 +5,10 @@ function handleFile(e) {
 
     if (file) {
         if (file.name.endsWith('.csv')) {
-            // Se o arquivo for CSV, use PapaParse
+            
             parseCSV(file);
         } else if (file.name.endsWith('.xls') || file.name.endsWith('.xlsx')) {
-            // Se o arquivo for Excel, use XLSX
+            
             readExcel(file);
         } else {
             alert('Formato de arquivo não suportado.');
@@ -46,7 +46,7 @@ function readExcel(file) {
 
 function displayData(data) {
     const outputDiv = document.getElementById('output');
-    outputDiv.innerHTML = ''; // Limpa qualquer conteúdo anterior
+    outputDiv.innerHTML = ''; 
 
     const table = document.createElement('table');
 
@@ -66,14 +66,14 @@ function displayData(data) {
 }
 
 function generateChart(data, chartType) {
-    const labels = data[0].slice(1); // A primeira coluna é assumida como rótulos
+    const labels = data[0].slice(1); 
     const datasets = [];
 
     for (let i = 1; i < data.length; i++) {
-        const seriesData = data[i].slice(1).map(Number); // Converte os valores para números
+        const seriesData = data[i].slice(1).map(Number); 
         const color = getRandomColor();
         datasets.push({
-            label: data[i][0], // Assume que a primeira coluna de cada linha é o rótulo da série
+            label: data[i][0], 
             data: seriesData,
             backgroundColor: color,
             borderColor: color,
@@ -91,28 +91,28 @@ function generateChart(data, chartType) {
         options: {
             scales: {
                 x: {
-                    stacked: false // Barras não empilhadas
+                    stacked: false
                 },
                 y: {
-                    stacked: false // Barras não empilhadas
+                    stacked: false 
                 }
             },
             plugins: {
                 legend: {
-                    display: false // Não mostrar a legenda padrão
+                    display: false 
                 }
             }
         }
     });
 
-    // Adiciona as datas abaixo de cada barra
+    
     const xAxis = myChart.scales.x;
     datasets.forEach((dataset, i) => {
         const meta = myChart.getDatasetMeta(i);
         meta.data.forEach((bar, index) => {
             const label = xAxis.getLabelForValue(labels[index]);
             const labelX = bar.x + bar.width / 2;
-            const labelY = bar.y + 10; // Ajuste a posição vertical conforme necessário
+            const labelY = bar.y + 10; 
             ctx.textAlign = 'center';
             ctx.fillText(label, labelX, labelY);
         });
