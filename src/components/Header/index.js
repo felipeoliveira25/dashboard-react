@@ -12,7 +12,10 @@ const Header = () => {
     <Container>
       <FaBars onClick={showSiderbar} />
       {sidebar && <Sidebar active={setSidebar} />}
+      <h1 className='title'>DashBoard</h1>
     </Container>
+    
+    
   )
 }
 

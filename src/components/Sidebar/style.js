@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #171923;
+  background-color: #5A6ACF;
   position: fixed;
+  color: #FFF;
   height: 100%;
   top: 0px;
   left: 0px;
@@ -22,10 +23,48 @@ export const Container = styled.div`
 
   .title-side{
     color: #FFF;
-    margin-left: 150px;
+    margin-left: 120px;
     margin-top: 35px;
     font-size: 20px;
+    margin-bottom: -105px;
     
+  }
+
+  .drop-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+
+  .drop-card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    
+    margin-top:-30px;
+  }
+
+  .drop-card > label{
+    margin-bottom: -20px;
+  }
+
+  .drop-card > select{
+    width: 228px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    color: #5A6ACF;
+    justify-content:space-around;
+    font-family: 'Poppins', sans-seriff;
+    
+  }
+
+  .drop-card > select > option{
+    
+    display:flex;
+    padding-left: 20px;
   }
 
   @keyframes showSidebar {

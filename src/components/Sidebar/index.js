@@ -2,15 +2,11 @@ import React from 'react'
 import { Container, Content } from './style'
 import { 
   FaTimes, 
-  FaHome, 
-  FaEnvelope, 
-  FaRegSun, 
-  FaUserAlt, 
-  FaIdCardAlt, 
-  FaRegFileAlt,
-  FaRegCalendarAlt,
-  FaChartBar
+   
+  
+  
 } from 'react-icons/fa'
+import { MdPeopleAlt } from "react-icons/md";
 
 import SidebarItem from '../SidebarItem'
 
@@ -19,20 +15,26 @@ const Sidebar = ({ active }) => {
   const closeSidebar = () => {
     active(false)
   }
-
+  const opcoesGerais = ['Rede', 'Região' ,'Estado', 'Tipo', 'Ano']
+  const opcoesRegiao = ['Norte', 'Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste']
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />  
       <p className = 'title-side'>Categorias</p>
       <Content>
-        <SidebarItem Icon={FaHome} Text="Home" />
-        <SidebarItem Icon={FaChartBar} Text="Statistics" />
-        <SidebarItem Icon={FaUserAlt} Text="Users" />
-        <SidebarItem Icon={FaEnvelope} Text="Mail" />
-        <SidebarItem Icon={FaRegCalendarAlt} Text="Calendar" />
-        <SidebarItem Icon={FaIdCardAlt} Text="Employees" />
-        <SidebarItem Icon={FaRegFileAlt} Text="Reports" />
-        <SidebarItem Icon={FaRegSun} Text="Settings" />
+      <div className='drop-down'>
+           {opcoesGerais.map((texto, index) => (
+            <div className='drop-card' key={index}>
+                <label>{texto}</label>
+                <select>
+                    {opcoesRegiao.map((text, subIndex) => (
+                        <option key={subIndex}>{text}</option>
+                    ))}
+                </select>
+            </div>
+           ))}
+        </div>
+<SidebarItem Icon={MdPeopleAlt} Text="Sobre Nós" />
       </Content>
     </Container>
   )

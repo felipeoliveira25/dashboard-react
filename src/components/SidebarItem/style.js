@@ -1,21 +1,25 @@
 import styled from 'styled-components';
 //estilização para cada item do sidebar ao abrir
 export const Container = styled.div`
+
+
   display: flex;
   align-items: center;
-  background-color: #1A202C; 
+  background-color: #FFF; 
   font-size: 20px;
-  color: white;
-  padding: 10px;
+  color: #5A6ACF;
   cursor: pointer;
-  border-radius: 10px;
-  margin: 0 15px 20px;
+  border-radius: 20px;
+  width: 228px;
+  margin-left: 30px;
+  
 
   > svg {
-    margin: 0 20px;
+    margin: 0 28px;
   }
 
   &:hover {
-    background-color: black;
+    background-color: gray;
+    color:white;
   }
 `;
