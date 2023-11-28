@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #FFF; 
   border-bottom: 1px solid #000;
+  
 
   > svg {
     position: fixed;
