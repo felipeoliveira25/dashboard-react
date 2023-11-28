@@ -21,7 +21,7 @@ export const Container = styled.div`
   .title{
     margin-left: 500px
   }
-  @media (min-width: 1100px) {
+  @media (min-width: 1201px) {
     .title {
       margin-left:700px;
     }
