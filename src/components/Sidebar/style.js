@@ -27,6 +27,7 @@ export const Container = styled.div`
     margin-top: 35px;
     font-size: 20px;
     margin-bottom: -105px;
+    border: none;
     
   }
 

@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     
   }
+  
 
   .barra-sup{
     display: flex;
@@ -17,12 +18,19 @@ export const Container = styled.div`
     margin-left: 50px;
     margin-right:50px
   }
+  
+    
 
   .grafic-aprov, .box-dados{
     
     background-color:#F5F5F5;
     width: 500px;
     height: 250px;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     
   }
 
@@ -39,6 +47,15 @@ export const Container = styled.div`
     width: 333px;
     height: 150px;
     background-color:#F5F5F5;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  p{
+    border-bottom: 1px solid #000;
+    margin: 0;
+    padding: 0;
+    position: static;
   }
 `;
