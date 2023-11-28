@@ -19,6 +19,11 @@ export const Container = styled.div`
     cursor: pointer;
   }
   .title{
-    margin-left: 600px
+    margin-left: 500px
+  }
+  @media (min-width: 1100px) {
+    .title {
+      margin-left:700px;
+    }
   }
 `;
