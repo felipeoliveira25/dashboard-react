@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container } from "./style";
 import Papa from 'papaparse';
+import Chart from 'react-apexcharts'
 
 
 const Grafic = () => {
@@ -24,7 +25,38 @@ const Grafic = () => {
       })
     }
   }
+  const series = [{
+    
+    data: [97.2, 0]
+    
+  }, {
+    name: 'Estadual',
+    data: [98,0]
+  }]
 
+  const options = {
+    options: {
+      chart: {
+        height: 350,
+        type: 'bar',
+      },
+      stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+      },
+      xaxis: {
+        
+      },
+      yaxis: {
+        title: {
+          text:'Taxa'
+        }
+      }
+    }
+  }
+
+  
   
 
     return(
@@ -32,6 +64,11 @@ const Grafic = () => {
             <div className="barra-sup">
                 <div className="grafic-aprov">
                   <p>Gráfico 1</p>
+                  <Chart
+                    options={options}
+                    series={series}
+                    type="bar"
+                    width={350}/>
                   
 
                   <input type="file" accept=".csv" onChange={lerArquivo}></input>
