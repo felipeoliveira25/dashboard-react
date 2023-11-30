@@ -15,8 +15,8 @@ const Sidebar = ({ active }) => {
   const closeSidebar = () => {
     active(false)
   }
-  const opcoesGerais = ['Rede', 'Região' ,'Estado', 'Tipo', 'Ano']
-  const opcoesRegiao = ['Norte', 'Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste']
+  const opcoesGerais = [ 'Região' ]
+  const opcoesRegiao = ['Norte', 'Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste', 'Todas']
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />  

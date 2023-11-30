@@ -45,7 +45,7 @@ export const Container = styled.div`
 
   .grafic-acess, .grafic-lab, .grafic-comput{
     width: 333px;
-    height: 150px;
+    height: 250px;
     background-color:#F5F5F5;
     display: flex;
     justify-content: space-between;
