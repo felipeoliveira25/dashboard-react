@@ -1,22 +1,28 @@
 import React from 'react'
+
 import { Container, Content } from './style'
-import { 
-  FaTimes, 
-   
-  
-  
-} from 'react-icons/fa'
+import { FaTimes} from 'react-icons/fa'
 import { MdPeopleAlt } from "react-icons/md";
 
 import SidebarItem from '../SidebarItem'
+import { useNavigate } from 'react-router-dom';
+
 
 const Sidebar = ({ active }) => {
+  
 
   const closeSidebar = () => {
     active(false)
   }
+
+  
+ 
   const opcoesGerais = [ 'Região' ]
   const opcoesRegiao = ['Norte', 'Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste', 'Todas']
+  const navigate = useNavigate();
+  const goToAboutUsPage = () => {
+    navigate('/aboutus')
+  }
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />  
@@ -34,7 +40,12 @@ const Sidebar = ({ active }) => {
             </div>
            ))}
         </div>
-<SidebarItem Icon={MdPeopleAlt} Text="Sobre Nós" />
+
+<button onClick = {goToAboutUsPage} ><SidebarItem Icon={MdPeopleAlt} Text="Sobre Nós"   /></button>
+
+
+
+
       </Content>
     </Container>
   )
