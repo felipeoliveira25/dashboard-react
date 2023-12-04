@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Container, Content } from './style'
-import { FaTimes} from 'react-icons/fa'
+import { FaTimes, FaHome} from 'react-icons/fa'
 import { MdPeopleAlt } from "react-icons/md";
 
 import SidebarItem from '../SidebarItem'
@@ -23,6 +23,9 @@ const Sidebar = ({ active }) => {
   const goToAboutUsPage = () => {
     navigate('/aboutus')
   }
+  const goToHomePage = () => {
+    navigate('/')
+  }
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />  
@@ -41,7 +44,12 @@ const Sidebar = ({ active }) => {
            ))}
         </div>
 
-<button onClick = {goToAboutUsPage} ><SidebarItem Icon={MdPeopleAlt} Text="Sobre Nós"   /></button>
+<div className='botoes'>
+  <button onClick = {goToHomePage} ><SidebarItem Icon={FaHome} Text="Home"   /></button>
+  <button onClick = {goToAboutUsPage} ><SidebarItem Icon={MdPeopleAlt} Text="Sobre Nós"   /></button>
+</div>
+
+
 
 
 

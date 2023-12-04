@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   background-color: #5A6ACF;
   position: fixed;
   color: #FFF;
@@ -11,6 +12,7 @@ export const Container = styled.div`
   width: 300px;
   left: ${props => props.sidebar ? '0' : '-100%'};
   animation: showSidebar .4s;
+  font-family: 'Poppins', sans-serif;
 
   > svg {
     position: fixed;
@@ -32,8 +34,14 @@ export const Container = styled.div`
     
   }
 
-  button{
+  .botoes{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button{
+  display: flex;
   align-items: center;
   background-color: #FFF; 
   font-size: 20px;
@@ -43,6 +51,8 @@ export const Container = styled.div`
   width: 228px;
   margin-left: 30px;
   border: none;
+  
+  font-family: 'Poppins', sans-serif;
   }
 
   button:hover {

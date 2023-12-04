@@ -52,7 +52,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  p{
+  .titulo-graf{
     border-bottom: 1px solid #000;
     margin: 0;
     padding: 0;

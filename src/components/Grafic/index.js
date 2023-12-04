@@ -198,7 +198,7 @@ const Grafic = () => {
         <Container>
             <div className="barra-sup">
                 <div className="grafic-aprov">
-                  <p>Taxa Aprovação (Brasil)</p>
+                  <p className="titulo-graf">Taxa Aprovação (Brasil)</p>
                   <Chart
                     options={options1}
                     series={series1}
@@ -209,7 +209,7 @@ const Grafic = () => {
                   {/*<input type="file" accept=".csv" onChange={lerArquivo}></input>*/}
                 </div>
                 <div className="box-dados">
-                <p>Acesso (Brasil)</p>
+                <p className="titulo-graf">Acesso (Brasil)</p>
                 <Chart
                     options={options2}
                     series={series2}
@@ -221,7 +221,7 @@ const Grafic = () => {
 
             <div className="barra-inf">
                 <div className="grafic-acess">
-                <p>Acesso à internet</p>
+                <p className="titulo-graf">Acesso à internet</p>
                 <Chart
                     options={options3}
                     series={series3}
@@ -230,7 +230,7 @@ const Grafic = () => {
                 {/*<input type="file" accept=".csv" onChange={lerArquivo}></input>*/}
                 </div>
                 <div className="grafic-lab">
-                <p>Lab. Informática</p>
+                <p className="titulo-graf">Lab. Informática</p>
                 <Chart
                     options={options4}
                     series={series4}
@@ -239,7 +239,7 @@ const Grafic = () => {
                 {/*<input type="file" accept=".csv" onChange={lerArquivo}></input>*/}
                 </div>
                 <div className="grafic-comput">
-                <p>Qtd. Computadores</p>
+                <p className="titulo-graf">Qtd. Computadores</p>
                 <Chart
                     options={options5}
                     series={series5}

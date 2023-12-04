@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar'
 
 
 
-const Header = () => {
+const Header = ({title}) => {
   const [sidebar, setSidebar] = useState(false)
 
   const showSiderbar = () => setSidebar(!sidebar)
@@ -15,7 +15,7 @@ const Header = () => {
       <Container>
       <FaBars onClick={showSiderbar} />
       {sidebar && <Sidebar active={setSidebar} />}
-      <h1 className='title'>DashBoard</h1>
+      <h1 className='title'>{title}</h1>
 
      
     </Container>

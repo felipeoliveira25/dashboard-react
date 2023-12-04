@@ -1,6 +1,7 @@
 import './home.css';
 import Header from '../../components/Header';
 import Main from '../../components/Main';
+import Footer from '../../components/Footer';
 
 
 function Home() {
@@ -9,8 +10,9 @@ function Home() {
     
     <div className='App'>
       
-      <Header/>
+      <Header title='Dashboard'/>
       <Main/>
+      <Footer/>
       
       
     </div>
