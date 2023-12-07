@@ -10,6 +10,8 @@
 </p>
 
 
+##Integrantes do grupo: Lara Nunes, Felipe Oliveira Ferreira, Lucas Emanuel, Lucas Martins, Lucas Galindo.
+
 ### Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
