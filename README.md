@@ -21,22 +21,22 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Como rodar a aplicação:
 ## (caso esteja clonando no terminal do sistema operacional, não usar o "$")
 
-# Instale o Node.js
+## Instale o Node.js
 <https://nodejs.org/en>
 
-# Abra o terminal/cmd e escolha a pasta que deseja colocar o arquivo
+## Abra o terminal/cmd e escolha a pasta que deseja colocar o arquivo
 $ cd Desktop
 
-# Clone este repositório
+## Clone este repositório
 $ git clone <https://github.com/lucasgalindo/projetointegrador2.git>
 
-# Entre na pasta clonada
+## Entre na pasta clonada
 $ cd projetointegrador2
 
-# Instale o React
+## Instale o React
 $ npm install react
 
-# Rode a aplicação
+## Rode a aplicação
 $ npm start
 
 
