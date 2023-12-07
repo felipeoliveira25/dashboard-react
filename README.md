@@ -19,7 +19,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 ### Como rodar a aplicação:
-(caso esteja clonando no terminal do sistema operacional, não usar o "$")
+## (caso esteja clonando no terminal do sistema operacional, não usar o "$")
 
 # Instale o Node.js
 <https://nodejs.org/en>
