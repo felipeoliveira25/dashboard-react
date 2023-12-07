@@ -5,30 +5,8 @@ import Chart from 'react-apexcharts'
 
 
 const Grafic = () => {
-
-  
-
-  {/*const lerArquivo = (e) => {
-    const arquivo = e.target.files[0];
-
-    if(arquivo){
-      Papa.parse(arquivo, {
-        header: true,
-        dynamicTyping: true,
-        complete: (result) => {
-          console.log(result.data)
-          
-        },
-        error: (error) => {
-          alert('Erro ao analisar o arquivo CSV:', error.message)
-        }
-      })
-    }
-  }*/}
   const series1 = [{
    data: [97.3, 97.2]
-
-    
   }]
 
   const options1 = {
@@ -91,6 +69,8 @@ const Grafic = () => {
         tickAmount: 3,
       }
     }
+
+    // a partir daqui vamos usar os dados do arquivo csv
     const series3 = [{
       data:[7499, 35027, 9175, 37237, 19146]
     }]

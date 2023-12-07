@@ -60,43 +60,6 @@ export const Container = styled.div`
     color:white;
   }
 
-  .drop-down{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-  }
-
-  .drop-card{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    
-    margin-top:-30px;
-  }
-
-  .drop-card > label{
-    margin-bottom: -20px;
-  }
-
-  .drop-card > select{
-    width: 228px;
-    height: 40px;
-    border-radius: 20px;
-    outline: none;
-    color: #5A6ACF;
-    justify-content:space-around;
-    font-family: 'Poppins', sans-seriff;
-    
-  }
-
-  .drop-card > select > option{
-    
-    display:flex;
-    padding-left: 20px;
-  }
-
   @keyframes showSidebar {
     from {
       opacity: 0;
@@ -110,5 +73,5 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 100px;
+  margin-top: 150px;
 `;

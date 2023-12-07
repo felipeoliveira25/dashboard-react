@@ -19,11 +19,9 @@ export const Container = styled.div`
     cursor: pointer;
   }
   .title{
-    margin-left: 500px
+    flex: 1;
+    text-align: center;
+   
   }
-  @media (min-width: 1300px) {
-    .title {
-      margin-left:700px;
-    }
-  }
+ 
 `;
