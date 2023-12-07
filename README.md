@@ -10,7 +10,9 @@
 </p>
 
 
-##Integrantes do grupo: Lara Nunes, Felipe Oliveira Ferreira, Lucas Emanuel, Lucas Martins, Lucas Galindo.
+## Integrantes do grupo: 
+
+Lara Nunes, Felipe Oliveira Ferreira, Lucas Emanuel, Lucas Martins, Lucas Galindo.
 
 ### Tecnologias utilizadas
 
